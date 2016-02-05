@@ -6,6 +6,7 @@ import NotFound from './notfound/Page.react';
 import Profile from './me/Profile.react';
 import React from 'react';
 import Settings from './me/Settings.react';
+import Timepicker from './timepicker/Page.react';
 import Todos from './todos/Page.react';
 import {IndexRoute, Route} from 'react-router';
 
@@ -30,6 +31,7 @@ export default function createRoutes(getState) {
         <Route component={Settings} path="settings" />
       </Route>
       <Route component={Todos} path="todos" />
+      <Route component={Timepicker} path="timepicker" />
       <Route component={NotFound} path="*" />
     </Route>
   );
